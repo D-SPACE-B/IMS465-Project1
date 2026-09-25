@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "name": "Playerinput",
+    "maps": [
+        {
+            "name": "BattleScene",
+            "id": "d1f4bfdc-0b04-4990-8ffe-f84ad6062508",
+            "actions": [
+                {
+                    "name": "Attack",
+                    "type": "Button",
+                    "id": "2f23f561-142f-4642-a56d-0b3ce8b62ebe",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "a43aad63-049b-4fd7-ad3d-ec0c0b53b5e9",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
