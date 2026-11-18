@@ -12,7 +12,8 @@ public class EnemyUnit : MonoBehaviour, IInteractable
     public bool PlayerAttackOver = false;
 
     public PlayerUnit Player;
-    [SerializeField] private bool armored = false;
+    public UIManager UI;
+    [SerializeField] public bool armored = false;
     [SerializeField] private TextMeshProUGUI EnemyTextComponent;
 
     public int Damage = 0;
@@ -20,7 +21,7 @@ public class EnemyUnit : MonoBehaviour, IInteractable
     void Start()
     {
         CurrentEHealth = EnemyMaxHealth;
-        EnemyTextComponent.SetText(CurrentEHealth + "/" + EnemyMaxHealth);
+        EnemyTextComponent.SetText("HP:" + CurrentEHealth + "/" + EnemyMaxHealth);
     }
 
     // Update is called once per frame
@@ -38,7 +39,7 @@ public class EnemyUnit : MonoBehaviour, IInteractable
         {
             Damage = 7;
         }
-        EnemyTextComponent.SetText(CurrentEHealth + "/" + EnemyMaxHealth);
+        EnemyTextComponent.SetText("HP: " + CurrentEHealth + "/" + EnemyMaxHealth);
         HealthChange();
 
         
@@ -71,6 +72,7 @@ public class EnemyUnit : MonoBehaviour, IInteractable
         {
             if (activeWeapon == Weapon.Lance) 
             {
+                UI.ShowBreakText();
                 return true;
             }
         }
@@ -78,6 +80,7 @@ public class EnemyUnit : MonoBehaviour, IInteractable
         {
             if (activeWeapon == Weapon.Sword)
             {
+                UI.ShowBreakText();
                 return true;
             }
         }
@@ -85,6 +88,7 @@ public class EnemyUnit : MonoBehaviour, IInteractable
         {
             if (activeWeapon == Weapon.Axe)
             {
+                UI.ShowBreakText();
                 return true;
             }
         }

@@ -28,13 +28,13 @@ public class PlayerUnit : MonoBehaviour
     void Start()
     {
         CurrentPHealth = PlayerMaxHealth;
-        PlayerTextComponent.SetText(CurrentPHealth + "/" + PlayerMaxHealth);
+        PlayerTextComponent.SetText("HP:" + CurrentPHealth + "/" + PlayerMaxHealth);
     }
 
     // Update is called once per frame
     void Update()
     {
-        PlayerTextComponent.SetText(CurrentPHealth + "/" + PlayerMaxHealth);
+        PlayerTextComponent.SetText("HP: " + CurrentPHealth + "/" + PlayerMaxHealth);
         if (activeWeapon == Weapon.Sword)
         {
             Damage = 5;
