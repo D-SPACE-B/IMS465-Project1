@@ -6,3 +6,11 @@ After a lttle, the enemy will attack the player, dealing damage back. This is wh
 Originally, I had wanted to have more indicators for certain aspects on the screen, so that it would be easy to tell exactly what's going on. Unfortunately, I had to cut back on those due to the unforseen difficulty 
 of adding in what I did. While coding this sprint, I ran into a lot of unfortunate and small issues that came from my lack of experience in c#. For the most part though, I was able to swiftly solve 
 the issue and learn what caused it with the help of a peer.
+
+Sprint 2 DevLog
+Before working on this sprint I re-looked at the post-mortem I wrote to see exactly what it is I wanted to do. After doing that I began to work, adding most of the features that I said I would (More on this later).
+Around the middle while I was working, I realized that some things I said I was gonna do for the project in its whole would've been way out of scope. Specifically the part about adding in the non combat scene to the project.
+But enough about the stuff I cut, let's talk about the stuff I added. Like I said in post-mortem my P0 tasks were to add the final UI aspects to the project, and so I did. I added in engine indicators for: when the enemy is
+armored, when the enemy gets broken, and for what weapon both the player and the enemy are wielding. I also cleaned up the HP indicator to make it more obvious as to what it is. Lastly, I fixed up the UI so that I changes 
+size with the screen size. Oh, and I actualy added the UI Manager I was supposed to last time. Other than the stuff that's mentioned, nothing has changed. For the next sprint, I want to clean up the project a little more 
+then add in some sprites for the player pill and enemy pill.
